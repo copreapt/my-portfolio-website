@@ -1,4 +1,13 @@
-import { BsFacebook, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsGithub, BsLinkedin, BsStripe} from "react-icons/bs";
+import { AiFillHtml5, AiOutlineFieldTime } from "react-icons/ai";
+import {
+  BiLogoCss3,
+  BiLogoReact,
+  BiLogoTailwindCss,
+  BiLogoFirebase,
+} from "react-icons/bi";
+import {IoLogoJavascript} from 'react-icons/io'
+import { SiAuth0, SiNetlify } from "react-icons/si";
 
 
 
@@ -46,5 +55,62 @@ export const socials = [
     id: 4,
     url: "",
     icon: <BsLinkedin />,
+  },
+];
+
+export const techStack = [
+  {
+    id: 1,
+    icon: <AiFillHtml5 />,
+  },
+  {
+    id: 2,
+    icon: <BiLogoCss3 />,
+  },
+  {
+    id: 3,
+    icon: <IoLogoJavascript />,
+  },
+  {
+    id: 4,
+    icon: <BiLogoTailwindCss />,
+  },
+  {
+    id: 5,
+    icon: <BiLogoReact />,
+  },
+  {
+    id: 6,
+    icon: <BiLogoFirebase />,
+  },
+  {
+    id: 7,
+    icon: <SiNetlify />,
+  },
+  {
+    id: 8,
+    icon: <SiAuth0 />,
+  },
+  {
+    id: 9,
+    icon: <BsStripe />,
+  },
+];
+
+export const profileLinks = [
+  {
+    id: 1,
+    url: "",
+    icon: <BsLinkedin />,
+  },
+  {
+    id: 2,
+    url: "",
+    icon: <BsGithub />,
+  },
+  {
+    id: 3,
+    url: "",
+    icon: <AiOutlineFieldTime />,
   },
 ];
