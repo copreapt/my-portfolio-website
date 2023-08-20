@@ -7,7 +7,7 @@ const FormSubmit = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            navigate("/homepage")
+            navigate("/")
         },5000)
     },[])
 
