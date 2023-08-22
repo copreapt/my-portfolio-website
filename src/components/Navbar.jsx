@@ -58,8 +58,8 @@ const Navbar = () => {
         </div>
       </aside>
       {/* END OF SIDEBAR */}
-      <div className=" w-full h-[4rem] flex items-center justify-between shadow-md shadow-black">
-        <Link to='/'>
+      <div className=" w-full h-[4rem] bg-[#6495ED] flex items-center justify-between shadow-md shadow-[#6495ED">
+        <Link to="/">
           <img
             src={logo}
             alt="logo"
@@ -67,7 +67,7 @@ const Navbar = () => {
           />
         </Link>
         <AiOutlineMenu
-          className="w-[4rem] h-[4rem]  mr-3 lg:hidden"
+          className="w-[4rem] h-[4rem] text-white mr-3 lg:hidden"
           onClick={() => setIsSidebarOpen(true)}
         />
         {/* links for desktop navbar */}
@@ -77,7 +77,7 @@ const Navbar = () => {
               <Link
                 to={item.url}
                 key={item.id}
-                className={`mr-10 font-semibold text-xl ${
+                className={`mr-10 font-semibold text-xl text-white ${
                   item.name === "Home" ? "hidden" : ""
                 }`}
               >
