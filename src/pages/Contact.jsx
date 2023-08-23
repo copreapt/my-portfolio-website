@@ -2,7 +2,7 @@ import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import {BiLogoGmail} from 'react-icons/bi'
-import img from '../assets/contact.svg'
+import img from '/assets/contact.svg'
 
 
 const Contact = () => {

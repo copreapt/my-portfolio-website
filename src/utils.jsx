@@ -8,8 +8,6 @@ import {
 } from "react-icons/bi";
 import {IoLogoJavascript} from 'react-icons/io'
 import { SiAuth0, SiNetlify } from "react-icons/si";
-// import img1 from "../src/assets/mess-app.png"
-// import img2 from "../src/assets/akinator-app.png"
 
 
 
@@ -121,14 +119,14 @@ export const profileLinks = [
 export const projects = [
   {
     id: 1,
-    img: "../src/assets/mess-app.png",
+    img: "/assets/mess-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/messenger-app",
     liveDemo: "https://cata-react-mess-app.netlify.app/",
   },
   {
     id: 2,
-    img: "../src/assets/aki-app.png",
+    img: "/assets/aki-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/akinator-app",
     liveDemo: "https://catalin-akinator-app.netlify.app/",
