@@ -123,6 +123,8 @@ export const projects = [
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/messenger-app",
     liveDemo: "https://cata-react-mess-app.netlify.app/",
+    description:
+      "Messenger App - It was a bit challenging to figure out how to store and structure the data on my database (Firebase) so two users would get to see each other's messages. But after days of research I think i nailed it. I'm really proud of this project since it was done with pure research, without following a course or anything similar. The project is still being developed and worked on. ",
   },
   {
     id: 2,
@@ -130,5 +132,30 @@ export const projects = [
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/akinator-app",
     liveDemo: "https://catalin-akinator-app.netlify.app/",
+    description: "Akinator App - Depending on what answers you select along the way, it will give you back 1 out of 3 presidents for each country.",
+  },
+  {
+    id: 3,
+    img: "/assets/nautica-app.png",
+    doneUsing: "React Js",
+    gitHub: "https://github.com/copreapt/nautica-replica-app",
+    liveDemo: "https://nautica-app.netlify.app/",
+    description: "Nautica Ereso App - I like their website, and tried to make a copy of the homepage, product and contact page.",
+  },
+  {
+    id: 4,
+    img: "/assets/store.png",
+    doneUsing: "React Js + Netlify Functions + Auth0 + Stripe",
+    gitHub: "https://github.com/copreapt/react-comfy",
+    liveDemo: "https://react-comfy-cop.netlify.app/",
+    description: "Comfy Store - Was done following the instructions from an ongoing React course by John Smilga. The huge takeaway from this project was the Netlify Serverless Functions and Stripe payment integration.",
+  },
+  {
+    id: 5,
+    img: "/assets/jobster.png",
+    doneUsing: "React Js + Course Server + Course API + Redux",
+    gitHub: "https://github.com/copreapt/my-jobster-app",
+    liveDemo: "https://catalin-jobster-app.netlify.app/landing",
+    description: "Jobster - Was done following the instructions from an ongoing React course by John Smilga. The project is mainly done with the John's server and own API. The project was done using the Redux Toolkit.",
   },
 ];

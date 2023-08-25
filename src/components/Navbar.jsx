@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
       </aside>
       {/* END OF SIDEBAR */}
-      <div className=" w-full h-[4rem] bg-[#6495ED] flex items-center justify-between shadow-md shadow-[#6495ED">
+      <div className=" w-full sticky top-0 h-[4rem] bg-[#6495ED] flex items-center justify-between shadow-md shadow-[#6495ED">
         <Link to="/">
           <img
             src={logo}
