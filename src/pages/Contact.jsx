@@ -19,7 +19,7 @@ const Contact = () => {
         <section className="flex justify-evenly space-x-5 bg-[#171717]">
           {/* form */}
 
-          <div className="w-[60%] m-[8%] lg:mt-[6%] mt-10">
+          <div className="w-[100%] lg:w-[60%] m-[8%] lg:mt-[6%] mt-10">
             <form
               className="flex flex-col text-left p-3 space-y-4 bg-[#6495ED] rounded ease-in-out duration-200"
               action="https://formspree.io/f/xrgwqgqa"

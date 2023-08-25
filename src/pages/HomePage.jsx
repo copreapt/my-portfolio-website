@@ -10,7 +10,7 @@ const HomePage = () => {
       <section className="lg:w-[80%] lg:m-auto">
         <div className="flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="text-center items-center flex flex-col">
-            <h1 className="font-bold text-3xl lg:text-6xl text-white">
+            <h1 className="font-bold text-3xl lg:text-6xl pt-5 lg:pt-0 text-white">
               Front-End React Developer
             </h1>
             {/* linked in, github */}
@@ -35,11 +35,11 @@ const HomePage = () => {
           <img
             src={me}
             alt="photo of myself"
-            className="mt-5 lg:mt-10 lg:w-[50%] w-[90%] rounded-full lg:shadow-md lg:shadow-black lg:hover:shadow-lg lg:hover:shadow-black lg:ease-in-out lg:duration-500 lg:hover:scale-105"
+            className="mt-5 lg:mt-10 lg:w-[50%] w-[90%] rounded-full lg:shadow-md lg:shadow-black lg:hover:shadow-lg lg:hover:shadow-black lg:ease-in-out lg:duration-500 lg:hover:scale-105 z-10"
           />
         </div>
         <div className="text-center mt-5 lg:hidden">
-          <p className="font-semibold">
+          <p className="font-semibold text-white">
             Hi there! My name is Oprea Catalin,
             <br />
             I'm 26 years old and I'm based in Galati, Romania
