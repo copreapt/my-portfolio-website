@@ -27,7 +27,7 @@ const Projects = () => {
               </div>
               {/* TEXT DIV */}
               <div className=" lg:w-[90%] lg:flex lg:flex-col lg:justify-between">
-                <h1 className="hidden lg:block text-white text-small text-center">
+                <h1 className="hidden lg:block text-white text-small text-center lg:text-lg">
                   {project.description}
                 </h1>
                 <h1 className="text-white text-xl text-center pt-5">
