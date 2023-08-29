@@ -36,6 +36,9 @@ const Projects = () => {
                 <p className="text-center text-white text-xl">
                   {project.doneUsing}
                 </p>
+                <p className="text-center text-white text-xl pt-2">
+                  {project.version}
+                </p>
                 <div className="flex justify-evenly space-x-3 mt-10 mx-4">
                   <button className="p-2 bg-[#6495ED] rounded-full w-[80%] text-white">
                     <Link to={project.gitHub} target="_blank">
