@@ -43,19 +43,19 @@ export const socials = [
   },
   {
     id: 2,
-    url: "",
+    url: "https://www.instagram.com/catalinopreapt/",
     icon: <BsInstagram />,
   },
   {
     id: 3,
-    url: "",
+    url: "https://github.com/copreapt",
     icon: <BsGithub />,
   },
-  {
-    id: 4,
-    url: "",
-    icon: <BsLinkedin />,
-  },
+  // {
+  //   id: 4,
+  //   url: "",
+  //   icon: <BsLinkedin />,
+  // },
 ];
 
 export const techStack = [
@@ -98,19 +98,19 @@ export const techStack = [
 ];
 
 export const profileLinks = [
-  {
-    id: 1,
-    url: "",
-    icon: <BsLinkedin />,
-  },
+  // {
+  //   id: 1,
+  //   url: "",
+  //   icon: <BsLinkedin />,
+  // },
   {
     id: 2,
-    url: "",
+    url: "https://github.com/copreapt",
     icon: <BsGithub />,
   },
   {
     id: 3,
-    url: "",
+    url: "https://wakatime.com/@copreapt",
     icon: <AiOutlineFieldTime />,
   },
 ];
