@@ -9,10 +9,10 @@ const About = () => {
 
   return (
     <main className="bg-[#171717] h-screen overflow-y-auto">
-      <section className='lg:flex lg:w-fit lg:mx-10 lg:pt-10'>
+      <section className="lg:flex lg:w-fit lg:mx-10 lg:pt-10">
         {/* visible only in desktop */}
         <div className="hidden lg:block pt-10 w-[80%]">
-          <img src={about} alt="about me" className='w-full' />
+          <img src={about} alt="about me" className="w-full" />
         </div>
         <div className="mx-8 pt-10 flex flex-col text-white text-center lg:w-[60%] lg:justify-center">
           <h1 className="font-semibold text-2xl">About Me</h1>
@@ -37,6 +37,14 @@ const About = () => {
             >
               Personal
             </button>
+            <button
+              className={`bg-[#6495ED] rounded-md p-2 w-full ease-in-out duration-300 ${
+                active === "Future Plans" && "bg-blue-700"
+              }`}
+              onClick={() => setActive("Future Plans")}
+            >
+              Future Plans
+            </button>
           </div>
           {active === "Professional" ? (
             <p className="mt-10 leading-7 lg:text-xl lg:p-2 lg:text-left lg:pl-10 lg:leading-8">
@@ -49,7 +57,7 @@ const About = () => {
               I am also a team player who thrives in collaborating with
               cross-functional teams to produce outstanding web applications.
             </p>
-          ) : (
+          ) : active === "Personal" ? (
             <p className="mt-10 leading-7 lg:text-xl lg:text-left lg:p-2 lg:pl-10 lg:leading-9">
               <span className="font-bold pr-1 text-[#6495ED]">
                 Some of my Hobbies are:
@@ -65,6 +73,14 @@ const About = () => {
               I have a twin brother, I lived 8 years in Spain and 2 years in
               Ireland. <br />
             </p>
+          ) : (
+            <>
+              <div>
+                <p className=" mt-10 leading-7 lg:text-xl lg:text-left lg:p-2 lg:pl-10 lg:leading-9">
+                  Learning to create my own server and database using node, express and mongoDB.
+                </p>
+              </div>
+            </>
           )}
         </div>
       </section>

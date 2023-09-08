@@ -1,12 +1,12 @@
 import React from 'react'
-import me from '/assets/me.jpeg'
+import me from '/assets/me2.jpeg'
 import { profileLinks, techStack } from '../utils';
 import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
   return (
-    <main className="bg-[#171717] h-screen">
+    <main className="bg-[#171717] max-w-screen-2xl">
       <section className="lg:w-[80%] lg:m-auto">
         <div className="flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="text-center items-center flex flex-col">
@@ -24,7 +24,7 @@ const HomePage = () => {
               })}
             </div>
             {/* paragraph for desktop version */}
-            <div className="text-center mt-5 hidden lg:block">
+            <div className="text-center lg:text-2xl mt-5 hidden lg:block">
               <p className="font-semibold text-white">
                 Hi there! My name is Oprea Catalin,
                 <br />
@@ -35,7 +35,7 @@ const HomePage = () => {
           <img
             src={me}
             alt="photo of myself"
-            className="mt-5 lg:mt-10 lg:w-[50%] w-[90%] rounded-full lg:shadow-md lg:shadow-black lg:hover:shadow-lg lg:hover:shadow-black lg:ease-in-out lg:duration-500 lg:hover:scale-105 z-10"
+            className="mt-5 max-w-[400px] lg:mt-10 max-h-[400px] lg:max-h-[500px] lg:w-[50%] w-[90%] rounded-full lg:shadow-md lg:shadow-black lg:hover:shadow-lg lg:hover:shadow-black lg:ease-in-out lg:duration-500 lg:hover:scale-105 z-10"
           />
         </div>
         <div className="text-center mt-5 lg:hidden">
@@ -46,8 +46,10 @@ const HomePage = () => {
           </p>
         </div>
         {/* tech stack */}
-        <div className="text-center mt-5 lg:flex lg:mt-10">
-          <h1 className="text-xl font-bold  lg:m-2 p-2 text-white">Tech Stack</h1>
+        <div className="text-center mt-5 lg:flex lg:mt-0">
+          <h1 className="text-xl font-bold  lg:m-2 p-2 text-white">
+            Tech Stack
+          </h1>
           <div className="flex justify-evenly mt-5 text-2xl lg:ml-5 lg:space-x-6">
             {techStack.map((item) => {
               return (

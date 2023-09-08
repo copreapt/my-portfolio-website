@@ -63,11 +63,11 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-[50%] lg:w-[20%] lg:ml-10 h-full lg:cursor-pointer"
+            className="w-[50%] max-w-[300px] lg:ml-10 h-full lg:cursor-pointer"
           />
         </Link>
         <AiOutlineMenu
-          className="w-[4rem] h-[4rem] text-white mr-3 lg:hidden"
+          className="w-[2rem] h-[4rem] text-white mr-3 lg:hidden"
           onClick={() => setIsSidebarOpen(true)}
         />
         {/* links for desktop navbar */}

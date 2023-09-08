@@ -8,6 +8,7 @@ import {
 } from "react-icons/bi";
 import {IoLogoJavascript} from 'react-icons/io'
 import { SiAuth0, SiNetlify } from "react-icons/si";
+import {IoLogoNodejs} from 'react-icons/io'
 
 
 
@@ -94,6 +95,10 @@ export const techStack = [
   {
     id: 9,
     icon: <BsStripe />,
+  },
+  {
+    id: 10,
+    icon: <IoLogoNodejs />,
   },
 ];
 
