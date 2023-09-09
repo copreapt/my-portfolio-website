@@ -4,7 +4,7 @@ import { projects } from '../utils';
 
 const Projects = () => {
   return (
-    <main className="h-max flex flex-col overflow-y-auto bg-[#171717]">
+    <main className="max-w-screen-xl mx-auto flex flex-col overflow-y-auto bg-[#171717]">
       <div className="mt-20 text-center">
         <h1 className="text-white text-3xl font-semibold">Projects</h1>
       </div>

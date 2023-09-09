@@ -8,8 +8,8 @@ const About = () => {
 
 
   return (
-    <main className="bg-[#171717] h-screen overflow-y-auto">
-      <section className="lg:flex lg:w-fit lg:mx-10 lg:pt-10">
+    <main className="bg-[#171717] overflow-y-auto max-w-screen-xl mx-auto py-10">
+      <section className="lg:flex lg:w-fit lg:mx-10">
         {/* visible only in desktop */}
         <div className="hidden lg:block pt-10 w-[80%]">
           <img src={about} alt="about me" className="w-full" />

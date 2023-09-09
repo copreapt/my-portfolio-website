@@ -15,11 +15,10 @@ const Contact = () => {
 
   return (
     <>
-      <main className="bg-[#171717] h-screen">
-        <section className="flex justify-evenly space-x-5 bg-[#171717]">
+      <main className="bg-[#171717] max-w-screen-xl mx-auto py-10">
+        <section className="lg:flex gap-5 bg-[#171717] mb-10">
           {/* form */}
-
-          <div className="w-[100%] lg:w-[60%] m-[8%] lg:mt-[6%] mt-10">
+          <div className="basis-1/2 px-10">
             <form
               className="flex flex-col text-left p-3 space-y-4 bg-[#6495ED] rounded ease-in-out duration-200"
               action="https://formspree.io/f/xrgwqgqa"
@@ -58,10 +57,11 @@ const Contact = () => {
             </form>
           </div>
           {/* svg */}
-          <div className="w-[80%] lg:flex hidden  items-center h-full">
-            <img src={img} alt="contact image" className="pr-10 pt-[10%]" />
+          <div className="hidden lg:block basis-1/2 p-20">
+            <img src={img} alt="contact image" />
           </div>
         </section>
+
         <footer className="flex justify-center bg-[#171717]">
           <div className="flex flex-col lg:flex-row lg:space-x-10 space-y-3 lg:space-y-0">
             <div className="flex items-center space-x-2 cursor-pointer">
