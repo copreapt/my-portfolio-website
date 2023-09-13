@@ -52,11 +52,11 @@ export const socials = [
     url: "https://github.com/copreapt",
     icon: <BsGithub />,
   },
-  // {
-  //   id: 4,
-  //   url: "",
-  //   icon: <BsLinkedin />,
-  // },
+  {
+    id: 4,
+    url: "https://www.linkedin.com/in/catalin-oprea-55039228b/",
+    icon: <BsLinkedin />,
+  },
 ];
 
 export const techStack = [
@@ -103,11 +103,11 @@ export const techStack = [
 ];
 
 export const profileLinks = [
-  // {
-  //   id: 1,
-  //   url: "",
-  //   icon: <BsLinkedin />,
-  // },
+  {
+    id: 1,
+    url: "https://www.linkedin.com/in/catalin-oprea-55039228b/",
+    icon: <BsLinkedin />,
+  },
   {
     id: 2,
     url: "https://github.com/copreapt",
