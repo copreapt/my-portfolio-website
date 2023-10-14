@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import about from '/assets/about-me.jpg'
 
 const About = () => {
-
   const [active, setActive] = useState("Professional");
 
-
-
   return (
-    <main className="bg-[#171717] overflow-y-auto max-w-screen-xl mx-auto py-10">
+    <main
+      className="bg-[#171717] overflow-y-auto max-w-screen-xl mx-auto py-10"
+      id="about"
+    >
       <section className="lg:flex lg:w-fit lg:mx-10">
         {/* visible only in desktop */}
         <div className="hidden lg:block pt-10 w-[80%]">
@@ -77,7 +77,11 @@ const About = () => {
             <>
               <div>
                 <p className=" mt-10 leading-7 lg:text-xl lg:text-left lg:p-2 lg:pl-10 lg:leading-9">
-                  Learning to create my own server and database using node, express and mongoDB.
+                  Building solid full-stack projects using MERN stack. I've
+                  already started building API's with node.js,express and
+                  mongoDB. I also want to learn next.js and typescript in the
+                  next 2 months and start implementing them in my future
+                  projects.
                 </p>
               </div>
             </>
@@ -86,6 +90,6 @@ const About = () => {
       </section>
     </main>
   );
-}
+};
 
 export default About

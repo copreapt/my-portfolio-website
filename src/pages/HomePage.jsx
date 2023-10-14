@@ -1,12 +1,14 @@
 import React from 'react'
 import me from '/assets/me2.jpeg'
 import { profileLinks, techStack } from '../utils';
-import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
   return (
-    <main className="bg-[#171717] max-w-screen-xl mx-auto lg:py-10">
+    <main
+      className="bg-[#171717] max-w-screen-xl mx-auto lg:py-10"
+      id='home'
+    >
       <div className="flex flex-col lg:flex-row items-center lg:justify-between">
         <div className="text-center items-center flex flex-col">
           <h1 className="font-bold text-3xl lg:text-6xl pt-5 lg:pt-0 text-white">
@@ -16,9 +18,9 @@ const HomePage = () => {
           <div className="lg:flex space-x-6 text-2xl mt-10 hidden text-white">
             {profileLinks.map((item) => {
               return (
-                <Link to={item.url} key={item.id}>
+                <a href={item.url} key={item.id}>
                   {item.icon}
-                </Link>
+                </a>
               );
             })}
           </div>
@@ -64,6 +66,6 @@ const HomePage = () => {
       </div>
     </main>
   );
-}
+};
 
 export default HomePage

@@ -1,40 +1,44 @@
-import { BsFacebook, BsInstagram, BsGithub, BsLinkedin, BsStripe} from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsGithub,
+  BsLinkedin,
+  BsStripe,
+} from "react-icons/bs";
 import { AiFillHtml5, AiOutlineFieldTime } from "react-icons/ai";
 import {
   BiLogoCss3,
   BiLogoReact,
   BiLogoTailwindCss,
   BiLogoFirebase,
+  BiLogoMongodb,
 } from "react-icons/bi";
-import {IoLogoJavascript} from 'react-icons/io'
-import { SiAuth0, SiNetlify } from "react-icons/si";
-import {IoLogoNodejs} from 'react-icons/io'
-
-
+import { IoLogoJavascript } from "react-icons/io";
+import { SiAuth0, SiNetlify, SiExpress } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
 
 export const links = [
   {
     id: 1,
-    name: "About",
-    url: "/about",
+    name: "Projects",
+    url: "#projects",
   },
   {
     id: 2,
-    name: "Projects",
-    url: "/projects",
+    name: "About",
+    url: "#about",
   },
   {
     id: 3,
     name: "Contact",
-    url: "/contact",
+    url: "#contact",
   },
   {
     id: 4,
     name: "Home",
-    url: "/",
+    url: "#home",
   },
 ];
-
 
 export const socials = [
   {
@@ -86,19 +90,15 @@ export const techStack = [
   },
   {
     id: 7,
-    icon: <SiNetlify />,
+    icon: <IoLogoNodejs />,
   },
   {
     id: 8,
-    icon: <SiAuth0 />,
+    icon: <SiExpress />,
   },
   {
     id: 9,
-    icon: <BsStripe />,
-  },
-  {
-    id: 10,
-    icon: <IoLogoNodejs />,
+    icon: <BiLogoMongodb />,
   },
 ];
 
@@ -120,7 +120,6 @@ export const profileLinks = [
   },
 ];
 
-
 export const projects = [
   {
     id: 1,
@@ -129,21 +128,31 @@ export const projects = [
     gitHub: "https://github.com/copreapt/messenger-app",
     liveDemo: "https://cata-react-mess-app.netlify.app/",
     description:
-      "Messenger App - It was a bit challenging to figure out how to store and structure the data on my database (Firebase) so two users would get to see each other's messages. But after days of research I think i nailed it. I'm really proud of this project since it was done with pure research, without following a course or anything similar. The project is still being developed and worked on. ",
+      "Messenger App - It was a bit challenging to figure out how to store and structure the data on my database (Firebase) so two users would get to see each other's messages. The app needs CSS improvements, a demo functionality and a mobile version. ",
     version: "Desktop Version",
   },
   {
     id: 2,
+    img: "/assets/node-api.png",
+    doneUsing: "Node.js + Express.js + mongoDB",
+    gitHub: "https://github.com/copreapt/node-api-project",
+    liveDemo: "https://node-api-project-8mes.onrender.com/",
+    description:
+      "E-commerce-API - My first complex API done with help of a tutorial. It was done using express and mongoDB.",
+    version: "Desktop Version",
+  },
+  {
+    id: 3,
     img: "/assets/aki-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/akinator-app",
     liveDemo: "https://catalin-akinator-app.netlify.app/",
     description:
-      "Akinator App - Depending on what answers you select along the way, it will give you back 1 out of 3 presidents for each country.",
+      "Akinator App - Depending on what answers you select along the way, it will give you back 1 out of 3 presidents for each country. The app needs some CSS fixing, a demo account and option to change language (from Romanian to English), once I'm done doing them I'll push the changes to github.",
     version: "Desktop Version",
   },
   {
-    id: 3,
+    id: 4,
     img: "/assets/nautica-app.png",
     doneUsing: "React Js",
     gitHub: "https://github.com/copreapt/nautica-replica-app",
@@ -153,23 +162,23 @@ export const projects = [
     version: "Desktop and Mobile Version",
   },
   {
-    id: 4,
+    id: 5,
     img: "/assets/store.png",
     doneUsing: "React Js + Netlify Functions + Auth0 + Stripe",
     gitHub: "https://github.com/copreapt/react-comfy",
     liveDemo: "https://react-comfy-cop.netlify.app/",
     description:
-      "Comfy Store - Was done following the instructions from an ongoing React course by John Smilga. The huge takeaway from this project was the Netlify Serverless Functions and Stripe payment integration.",
+      "Comfy Store - Was done following the instructions from an ongoing React course by John Smilga. The huge takeaway from this project was the Netlify Serverless Functions and Stripe payment integration. The API used is the one from Project Number 2 - E-commerce API",
     version: "Desktop and Mobile Version",
   },
   {
-    id: 5,
+    id: 6,
     img: "/assets/jobster.png",
     doneUsing: "React Js + Course Server + Course API + Redux",
     gitHub: "https://github.com/copreapt/my-jobster-app",
     liveDemo: "https://catalin-jobster-app.netlify.app/landing",
     description:
-      "Jobster - Was done following the instructions from an ongoing React course by John Smilga. The project is mainly done with the John's server and own API. The project was done using the Redux Toolkit.",
+      "Jobster - Was done following the instructions from an ongoing React course by John Smilga. The project's API,server and database were done on another course of John's (Node.js, express.js and mongoDB) which I've also completed and I'm already working on my own server and API for a future project",
     version: "Desktop and Mobile Version",
   },
 ];

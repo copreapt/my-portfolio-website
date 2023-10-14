@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from "react";
 import logo from '/assets/logo.png'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { links, socials } from '../utils'
-import { Link } from 'react-router-dom'
+
 
 const Navbar = () => {
-
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
 
   return (
     <>
@@ -29,14 +29,14 @@ const Navbar = () => {
           <div className="flex flex-col text-center space-y-10 mt-10">
             {links.map((link) => {
               return (
-                <Link
-                  to={link.url}
+                <a
+                  href={link.url}
                   className="text-2xl font-semibold"
                   key={link.id}
                   onClick={() => setIsSidebarOpen(false)}
                 >
                   {link.name}
-                </Link>
+                </a>
               );
             })}
           </div>
@@ -44,14 +44,14 @@ const Navbar = () => {
           <div className="flex justify-evenly mt-20">
             {socials.map((item) => {
               return (
-                <Link
-                  to={item.url}
+                <a
+                  href={item.url}
                   className="text-2xl"
                   key={item.id}
                   target="_blank"
                 >
                   {item.icon}
-                </Link>
+                </a>
               );
             })}
           </div>
@@ -59,13 +59,13 @@ const Navbar = () => {
       </aside>
       {/* END OF SIDEBAR */}
       <div className=" z-20 w-full sticky top-0 h-[4rem] bg-[#6495ED] flex items-center justify-between shadow-md shadow-[#6495ED">
-        <Link to="/">
+        <a href="#home">
           <img
             src={logo}
             alt="logo"
             className="w-[50%] max-w-[300px] lg:ml-10 h-full lg:cursor-pointer"
           />
-        </Link>
+        </a>
         <AiOutlineMenu
           className="w-[2rem] h-[4rem] text-white mr-3 lg:hidden"
           onClick={() => setIsSidebarOpen(true)}
@@ -74,21 +74,21 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           {links.map((item) => {
             return (
-              <Link
-                to={item.url}
+              <a
+                href={item.url}
                 key={item.id}
                 className={`mr-10 font-semibold text-xl text-white ${
                   item.name === "Home" ? "hidden" : ""
                 }`}
               >
                 {item.name}
-              </Link>
+              </a>
             );
           })}
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Navbar

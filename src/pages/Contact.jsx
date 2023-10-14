@@ -6,7 +6,6 @@ import img from '/assets/contact.svg'
 
 
 const Contact = () => {
-
   const resetForm = () => {
     setTimeout(() => {
       document.getElementById("contact-form").reset();
@@ -15,7 +14,10 @@ const Contact = () => {
 
   return (
     <>
-      <main className="bg-[#171717] max-w-screen-xl mx-auto py-10">
+      <main
+        className="bg-[#171717] max-w-screen-xl mx-auto py-10"
+        id='contact'
+      >
         <section className="lg:flex gap-5 bg-[#171717] mb-10">
           {/* form */}
           <div className="basis-1/2 px-10">
@@ -97,6 +99,6 @@ const Contact = () => {
       </main>
     </>
   );
-}
+};
 
 export default Contact

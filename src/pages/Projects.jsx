@@ -1,10 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { projects } from '../utils';
 
 const Projects = () => {
   return (
-    <main className="max-w-screen-2xl mx-auto flex flex-col overflow-y-auto bg-[#171717]">
+    <main
+      className="max-w-screen-2xl mx-auto flex flex-col overflow-y-auto bg-[#171717]"
+      id='projects'
+    >
       <div className="mt-20 text-center">
         <h1 className="text-white text-3xl font-semibold">Projects</h1>
       </div>
@@ -17,13 +19,13 @@ const Projects = () => {
             >
               {/* IMG DIV */}
               <div className="lg:w-[90%] lg:flex lg:items-center">
-                <Link to={project.liveDemo} target="_blank">
+                <a href={project.url} target="_blank">
                   <img
                     src={project.img}
                     alt="app preview"
                     className="rounded-xl"
                   />
-                </Link>
+                </a>
               </div>
               {/* TEXT DIV */}
               <div className=" lg:w-[90%] lg:flex lg:flex-col lg:justify-between">
@@ -41,14 +43,14 @@ const Projects = () => {
                 </p>
                 <div className="flex justify-evenly space-x-3 mt-10 mx-4">
                   <button className="p-2 bg-[#6495ED] rounded-full w-[80%] text-white">
-                    <Link to={project.gitHub} target="_blank">
+                    <a href={project.gitHub} target="_blank">
                       GitHub
-                    </Link>
+                    </a>
                   </button>
                   <button className="p-2 bg-[#6495ED] rounded-full w-[80%] text-white">
-                    <Link to={project.liveDemo} target="_blank">
+                    <a href={project.liveDemo} target="_blank">
                       Live Demo
-                    </Link>
+                    </a>
                   </button>
                 </div>
               </div>
@@ -58,6 +60,6 @@ const Projects = () => {
       </section>
     </main>
   );
-}
+};
 
 export default Projects
