@@ -1,64 +1,65 @@
-import React from 'react'
 import { projects } from '../utils';
 
 const Projects = () => {
   return (
-    <main
-      className="max-w-screen-2xl mx-auto flex flex-col overflow-y-auto bg-[#171717]"
-      id='projects'
-    >
-      <div className="mt-20 text-center">
-        <h1 className="text-white text-3xl font-semibold">Projects</h1>
-      </div>
-      <section className="w-[80%]  mx-auto mt-10 h-max space-y-10 lg:space-y-20 lg:flex lg:flex-col lg:items-center">
-        {projects.map((project) => {
-          return (
-            <div
-              className="rounded-xl pb-10 flex flex-col lg:flex-row lg:space-x-10 lg:w-[80%]"
-              key={project.id}
-            >
-              {/* IMG DIV */}
-              <div className="lg:w-[90%] lg:flex lg:items-center">
-                <a href={project.url} target="_blank">
-                  <img
-                    src={project.img}
-                    alt="app preview"
-                    className="rounded-xl"
-                  />
-                </a>
-              </div>
-              {/* TEXT DIV */}
-              <div className=" lg:w-[90%] lg:flex lg:flex-col lg:justify-between">
-                <h1 className="hidden lg:block text-white text-small text-center lg:text-lg">
-                  {project.description}
-                </h1>
-                <h1 className="text-white text-xl text-center pt-5">
-                  Done Using
-                </h1>
-                <p className="text-center text-white text-xl">
-                  {project.doneUsing}
-                </p>
-                <p className="text-center text-white text-xl pt-2">
-                  {project.version}
-                </p>
-                <div className="flex justify-evenly space-x-3 mt-10 mx-4">
-                  <button className="p-2 bg-[#6495ED] rounded-full w-[80%] text-white">
-                    <a href={project.gitHub} target="_blank">
-                      GitHub
+    <section className="flex flex-col w-full md:max-w-screen-xl mx-auto space-y-20" id="projects">
+      {/* projects done on my own */}
+      {/* container */}
+      <div className="flex flex-col mx-auto">
+        {/* h1 */}
+        <div className="text-2xl md:text-3xl text-white font-semibold mb-20 text-center uppercase underline">
+          <h1>Projects</h1>
+        </div>
+        {/* projects */}
+        <div className="flex flex-col items-center justify-center mx-5 md:mx-auto space-y-40">
+          {projects.map((project, index) => {
+            return (
+              // container
+              <div key={index} className="flex flex-col md:flex-row gap-20">
+                {/* container for image and buttons */}
+                <div className="space-y-2 ">
+                  {/*  image container */}
+                  <div className="flex flex-col overflow-hidden items-center justify-center bg-gradient-to-r from-zinc-900 from-10% via-zinc-500 via-30% to-zinc-900 to-90% md:h-[250px] md:w-[550px] md:pt-8 md:px-12 rounded-md w-fit">
+                    {/* image */}
+                    <a href={project.liveDemo} target="blank" rel="no-referrer">
+                      <img
+                        src={project.img}
+                        alt="project image"
+                        className="md:min-h-full md:min-w-full flex md:shrink-0 md:hover:scale-110 cursor-pointer ease-linear duration-500"
+                      />
                     </a>
-                  </button>
-                  <button className="p-2 bg-[#6495ED] rounded-full w-[80%] text-white">
-                    <a href={project.liveDemo} target="_blank">
-                      Live Demo
+                  </div>
+                  {/* buttons */}
+                  <div className="text-white text-xl font-sans w-full flex justify-between uppercase">
+                    {project.gitHub? <a href={project.gitHub} target="blank" rel="no-referrer">
+                      Git Hub
+                    </a> : ""}
+                    <a
+                      href={project.liveDemo}
+                      target="blank"
+                      rel="no-referrer">
+                      Live Project
                     </a>
-                  </button>
+                  </div>
+                </div>
+                {/* details */}
+                <div className="text-white px-5">
+                  <span>
+                    <span className="text-2xl">{project.name}</span> -{" "}
+                    <span className="text-lg text-gray-300">
+                      {project.description}
+                    </span>
+                  </span>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </section>
-    </main>
+            );
+          })}
+        </div>
+      </div>
+      {/* projects done on courses and tutorials */}
+      {/* container */}
+      <div></div>
+    </section>
   );
 };
 

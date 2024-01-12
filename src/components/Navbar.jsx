@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState } from "react";
 import logo from '/assets/logo.png'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 import { links, socials } from '../utils'
@@ -49,6 +49,7 @@ const Navbar = () => {
                   className="text-2xl"
                   key={item.id}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {item.icon}
                 </a>
@@ -58,26 +59,20 @@ const Navbar = () => {
         </div>
       </aside>
       {/* END OF SIDEBAR */}
-      <div className=" z-20 w-full sticky top-0 h-[4rem] bg-[#6495ED] flex items-center justify-between shadow-md shadow-[#6495ED">
-        <a href="#home">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[50%] max-w-[300px] lg:ml-10 h-full lg:cursor-pointer"
-          />
-        </a>
+      <div className=" z-20 w-full sticky top-0 h-[4rem] bg-black flex items-center justify-between px-10 border-b border-gray-600">
+        <a className="text-3xl text-white font-semibold hover:text-cyan-600 ease-in-out duration-700 cursor-pointer" href="#home">Catalin.dev</a>
         <AiOutlineMenu
-          className="w-[2rem] h-[4rem] text-white mr-3 lg:hidden"
+          className="w-[2rem] h-[4rem] text-white lg:hidden"
           onClick={() => setIsSidebarOpen(true)}
         />
         {/* links for desktop navbar */}
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex gap-4">
           {links.map((item) => {
             return (
               <a
                 href={item.url}
                 key={item.id}
-                className={`mr-10 font-semibold text-xl text-white ${
+                className={`font-semibold text-xl text-white ${
                   item.name === "Home" ? "hidden" : ""
                 }`}
               >

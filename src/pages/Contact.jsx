@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import {BiLogoGmail} from 'react-icons/bi'
@@ -14,11 +13,8 @@ const Contact = () => {
 
   return (
     <>
-      <main
-        className="bg-[#171717] max-w-screen-xl mx-auto py-10"
-        id='contact'
-      >
-        <section className="lg:flex gap-5 bg-[#171717] mb-10">
+      <main className="max-w-screen-xl mx-auto py-10" id="contact">
+        <section className="lg:flex gap-5 mb-10">
           {/* form */}
           <div className="basis-1/2 px-10">
             <form
@@ -36,23 +32,23 @@ const Contact = () => {
                 type="text"
                 name="fullName"
                 placeholder="Full Name"
-                className="placeholder:text-white text-white bg-black border-2 rounded border-black p-2"
+                className="placeholder:text-black text-black  border-2 rounded p-2"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="placeholder:text-white border-2 rounded bg-black text-white border-black p-2"
+                className="placeholder:text-black border-2 rounded  text-black p-2"
               />
               <textarea
                 name="message"
                 rows="2"
                 placeholder="Type your Message:"
-                className="placeholder:text-white bg-black border-2 text-white rounded border-black p-2"
+                className="placeholder:text-black  border-2 text-black rounded  p-2"
               ></textarea>
               <button
                 type="submit"
-                className="lg:w-[30%] w-full bg-black text-white p-2 rounded hover:bg-white hover:text-black hover:border hover:border-black ease-in-out duration-500"
+                className="lg:w-[30%] w-full  text-black p-2 rounded bg-white"
               >
                 Send Message
               </button>
@@ -64,7 +60,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <footer className="flex justify-center bg-[#171717]">
+        <footer className="flex justify-center">
           <div className="flex flex-col lg:flex-row lg:space-x-10 space-y-3 lg:space-y-0">
             <div className="flex items-center space-x-2 cursor-pointer">
               <BiLogoGmail className="text-3xl text-white bg-[#6495ED] rounded-full w-10 h-10 p-1 shadow-md shadow-black" />
@@ -78,6 +74,7 @@ const Contact = () => {
                 <a
                   href="https://www.facebook.com/profile.php?id=100011434323497"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   Catalin Oprea
                 </a>
@@ -89,6 +86,7 @@ const Contact = () => {
                 <a
                   href="https://www.instagram.com/catalinopreapt/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   @catalinopreapt
                 </a>

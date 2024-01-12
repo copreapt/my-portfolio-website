@@ -3,7 +3,6 @@ import {
   BsInstagram,
   BsGithub,
   BsLinkedin,
-  BsStripe,
 } from "react-icons/bs";
 import { AiFillHtml5, AiOutlineFieldTime } from "react-icons/ai";
 import {
@@ -14,7 +13,7 @@ import {
   BiLogoMongodb,
 } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiAuth0, SiNetlify, SiExpress } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 
 export const links = [
@@ -123,62 +122,74 @@ export const profileLinks = [
 export const projects = [
   {
     id: 1,
+    img: "/assets/twenty-media.png",
+    doneUsing: "React js + Express js, Mongodb, Node js",
+    gitHub: "https://github.com/copreapt/twenty",
+    liveDemo: "https://twenty-media.netlify.app/",
+    name: "Twenty-media",
+    description: "Twenty is a social media website where you can post pictures, leave likes and comments to other posts and also choose between white and dark theme. The project was done using MERN stack. React js was used for the front end part, Express js, Mongodb and Node js for backend. I also have to mention the project was done entirely on my own.",
+  },
+  {
+    id: 2,
+    img: "/assets/twenty-media-api.png",
+    doneUsing: "Express js, Mongodb, Node js",
+    gitHub: "https://github.com/copreapt/twenty_backend",
+    liveDemo: "https://twenty-media-55cab2bb0aef.herokuapp.com/",
+    name: "Twenty-media-API",
+    description: "This is the API which was used for twenty media, the API was done using Express js, Node js and Postman",
+  },
+  {
+    id: 3,
+    img: "/assets/meryan.png",
+    doneUsing: "Javascript, Tailwind CSS",
+    liveDemo: "https://royaltravel.no/meryan/",
+    name: "Meryan",
+    description: "Meryan is a project which was done using vanilla Javascript and Tailwind CSS",
+  },
+  {
+    id: 4,
     img: "/assets/mess-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/messenger-app",
     liveDemo: "https://cata-react-mess-app.netlify.app/",
-    description:
-      "Messenger App - It was a bit challenging to figure out how to store and structure the data on my database (Firebase) so two users would get to see each other's messages. The app needs CSS improvements, a demo functionality and a mobile version. ",
-    version: "Desktop Version",
+    name: "Messenger App",
+    description: 'The website was done using Firebase and React js. The takeaway from this project was how to "connect 2 users in 1 chat room". I have to mention that the css of the project will be reworked as well as the project in the near future.',
   },
   {
-    id: 2,
-    img: "/assets/node-api.png",
-    doneUsing: "Node.js + Express.js + mongoDB",
-    gitHub: "https://github.com/copreapt/node-api-project",
-    liveDemo: "https://node-api-project-8mes.onrender.com/",
-    description:
-      "E-commerce-API - My first complex API done with help of a tutorial. It was done using express and mongoDB.",
-    version: "Desktop Version",
-  },
-  {
-    id: 3,
+    id: 5,
     img: "/assets/aki-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/akinator-app",
     liveDemo: "https://catalin-akinator-app.netlify.app/",
-    description:
-      "Akinator App - Depending on what answers you select along the way, it will give you back 1 out of 3 presidents for each country. The app needs some CSS fixing, a demo account and option to change language (from Romanian to English), once I'm done doing them I'll push the changes to github.",
-    version: "Desktop Version",
+    name: "Akinator",
+    description: "The website was done using React js and Firebase. The project is meant to copy the Akinator game, but with the Presidents of a few countries. Once you register, you can start playing the game where you need to first choose a country and then answer a couple of questions. Depending on the answers you provided, you will get a President at the end of the game.",
   },
   {
-    id: 4,
+    id: 6,
     img: "/assets/nautica-app.png",
     doneUsing: "React Js",
     gitHub: "https://github.com/copreapt/nautica-replica-app",
     liveDemo: "https://nautica-app.netlify.app/",
-    description:
-      "Nautica Ereso App - I like their website, and tried to make a copy of the homepage, product and contact page.",
-    version: "Desktop and Mobile Version",
+    name: "Nautica",
+    description: "The website was done using React js. I tried to copy the Nautica Ereso website. The project was done a while ago and needs minor css fixes.",
   },
   {
-    id: 5,
+    id: 7,
     img: "/assets/store.png",
     doneUsing: "React Js + Netlify Functions + Auth0 + Stripe",
     gitHub: "https://github.com/copreapt/react-comfy",
     liveDemo: "https://react-comfy-cop.netlify.app/",
-    description:
-      "Comfy Store - Was done following the instructions from an ongoing React course by John Smilga. The huge takeaway from this project was the Netlify Serverless Functions and Stripe payment integration. The API used is the one from Project Number 2 - E-commerce API",
-    version: "Desktop and Mobile Version",
+    name: "Comfy Store",
+    description: "The Comfy Store website was done using React js, Auth0 and Stripe. The project was done following a course from Udemy. The reason I added the project to my portfolio is because I'm 100% sure I can replicate it without any issues.",
   },
   {
-    id: 6,
+    id: 8,
     img: "/assets/jobster.png",
     doneUsing: "React Js + Course Server + Course API + Redux",
     gitHub: "https://github.com/copreapt/my-jobster-app",
     liveDemo: "https://catalin-jobster-app.netlify.app/landing",
-    description:
-      "Jobster - Was done following the instructions from an ongoing React course by John Smilga. The project's API,server and database were done on another course of John's (Node.js, express.js and mongoDB) which I've also completed and I'm already working on my own server and API for a future project",
-    version: "Desktop and Mobile Version",
+    stack: {},
+    name: "Jobster",
+    description: "The Jobster website was done using React js, Redux and the API from the course I've followed. ",
   },
 ];
