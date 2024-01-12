@@ -59,8 +59,15 @@ const Navbar = () => {
         </div>
       </aside>
       {/* END OF SIDEBAR */}
-      <div className=" z-20 w-full sticky top-0 h-[4rem] bg-black flex items-center justify-between px-10 border-b border-gray-600">
-        <a className="text-3xl text-white font-semibold hover:text-cyan-600 ease-in-out duration-700 cursor-pointer" href="#home">Catalin.dev</a>
+      <div
+        className=" z-20 w-full sticky top-0 h-[4rem] bg-black flex items-center justify-between px-10 border-b border-gray-600"
+      >
+        <a
+          className="text-3xl text-white font-semibold hover:text-cyan-600 ease-in-out duration-700 cursor-pointer"
+          href="#"
+        >
+          Catalin.dev
+        </a>
         <AiOutlineMenu
           className="w-[2rem] h-[4rem] text-white lg:hidden"
           onClick={() => setIsSidebarOpen(true)}

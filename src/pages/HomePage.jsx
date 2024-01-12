@@ -4,8 +4,8 @@ import { profileLinks, techStack } from '../utils';
 
 const HomePage = () => {
   return (
-    <main className="max-w-screen-xl mx-auto md:mb-10" id="home">
-      <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-20">
+    <main className="max-w-screen-xl mx-auto md:mb-10">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-10">
         <div className="text-center items-center flex flex-col">
           <h1 className="font-bold text-3xl lg:text-6xl pt-5 lg:pt-0 text-white mb-10">
             Front-End React Developer
@@ -30,7 +30,7 @@ const HomePage = () => {
           </div>
         </div>
         {/* img div */}
-        <div className="flex items-center justify-center overflow-hidden h-[300px] w-[300px] md:h-[400px] md:w-[400px] rounded-full md:mt-20 border-2 border-white">
+        <div className="flex items-center justify-center overflow-hidden h-[300px] w-[300px] md:h-[400px] md:w-[400px] rounded-full md:mt-10 border-2 border-white">
           <img
             src={me}
             alt="photo of myself"
