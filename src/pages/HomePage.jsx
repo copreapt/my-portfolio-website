@@ -8,13 +8,18 @@ const HomePage = () => {
       <div className="flex flex-col lg:flex-row items-center lg:justify-between mb-10">
         <div className="text-center items-center flex flex-col">
           <h1 className="font-bold text-3xl lg:text-6xl pt-5 lg:pt-0 text-white mb-10">
-            Front-End React Developer
+            Full Stack Web Developer
           </h1>
           {/* linked in, github */}
           <div className="lg:flex space-x-6 text-4xl hidden text-[#6495ED] py-5 px-10">
             {profileLinks.map((item) => {
               return (
-                <a href={item.url} key={item.id} target='blank' rel='no-referrer'>
+                <a
+                  href={item.url}
+                  key={item.id}
+                  target="blank"
+                  rel="no-referrer"
+                >
                   {item.icon}
                 </a>
               );
@@ -47,7 +52,7 @@ const HomePage = () => {
       </div>
       {/* tech stack */}
       <div className="text-center">
-        <h1 className="text-2xl font-bold text-white lg:m-2 p-2 lg:text-3xl underline">
+        <h1 className="text-2xl font-bold text-white lg:m-2 p-2 lg:text-3xl underline decoration-[#6495ED]">
           Tech Stack
         </h1>
         <div className="flex justify-center mt-5 text-2xl lg:ml-5 lg:gap-6 lg:text-4xl">

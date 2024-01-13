@@ -2,12 +2,15 @@ import { projects } from '../utils';
 
 const Projects = () => {
   return (
-    <section className="flex flex-col w-full md:max-w-screen-xl mx-auto space-y-20" id="projects">
+    <section
+      className="flex flex-col w-full md:max-w-screen-xl mx-auto space-y-20"
+      id="projects"
+    >
       {/* projects done on my own */}
       {/* container */}
       <div className="flex flex-col mx-auto">
         {/* h1 */}
-        <div className="text-2xl md:text-3xl text-white font-semibold mb-20 text-center uppercase underline">
+        <div className="text-2xl md:text-3xl text-white font-semibold mb-20 text-center uppercase underline decoration-[#6495ED]">
           <h1>Projects</h1>
         </div>
         {/* projects */}
@@ -31,13 +34,14 @@ const Projects = () => {
                   </div>
                   {/* buttons */}
                   <div className="text-white text-xl font-sans w-full flex justify-between uppercase">
-                    {project.gitHub? <a href={project.gitHub} target="blank" rel="no-referrer">
-                      Git Hub
-                    </a> : ""}
-                    <a
-                      href={project.liveDemo}
-                      target="blank"
-                      rel="no-referrer">
+                    {project.gitHub ? (
+                      <a href={project.gitHub} target="blank" rel="no-referrer">
+                        Git Hub
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                    <a href={project.liveDemo} target="blank" rel="no-referrer">
                       Live Project
                     </a>
                   </div>
@@ -45,7 +49,10 @@ const Projects = () => {
                 {/* details */}
                 <div className="text-white px-5">
                   <span>
-                    <span className="text-2xl">{project.name}</span> -{" "}
+                    <span className="text-2xl text-[#6495ED]">
+                      {project.name}
+                    </span>{" "}
+                    -{" "}
                     <span className="text-lg text-gray-300">
                       {project.description}
                     </span>
