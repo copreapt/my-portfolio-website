@@ -36,7 +36,7 @@ const Projects = () => {
                   <div className="text-white text-xl font-sans w-full flex justify-between uppercase">
                     {project.gitHub ? (
                       <a href={project.gitHub} target="blank" rel="no-referrer">
-                        Git Hub
+                        Github
                       </a>
                     ) : (
                       ""
