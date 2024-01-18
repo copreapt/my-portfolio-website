@@ -148,15 +148,6 @@ export const projects = [
   },
   {
     id: 4,
-    img: "/assets/mess-app.png",
-    doneUsing: "React Js + Firebase",
-    gitHub: "https://github.com/copreapt/messenger-app",
-    liveDemo: "https://cata-react-mess-app.netlify.app/",
-    name: "Messenger App",
-    description: 'The website was done using Firebase and React js. The takeaway from this project was how to "connect 2 users in 1 chat room". I have to mention that the css of the project will be reworked as well as the project in the near future.',
-  },
-  {
-    id: 5,
     img: "/assets/aki-app.png",
     doneUsing: "React Js + Firebase",
     gitHub: "https://github.com/copreapt/akinator-app",
@@ -165,7 +156,7 @@ export const projects = [
     description: "The website was done using React js and Firebase. The project is meant to copy the Akinator game, but with the Presidents of a few countries. Once you register, you can start playing the game where you need to first choose a country and then answer a couple of questions. Depending on the answers you provided, you will get a President at the end of the game.",
   },
   {
-    id: 6,
+    id: 5,
     img: "/assets/nautica-app.png",
     doneUsing: "React Js",
     gitHub: "https://github.com/copreapt/nautica-replica-app",
@@ -174,7 +165,7 @@ export const projects = [
     description: "The website was done using React js. I tried to copy the Nautica Ereso website. The project was done a while ago and needs minor css fixes.",
   },
   {
-    id: 7,
+    id: 6,
     img: "/assets/store.png",
     doneUsing: "React Js + Netlify Functions + Auth0 + Stripe",
     gitHub: "https://github.com/copreapt/react-comfy",
@@ -183,7 +174,7 @@ export const projects = [
     description: "The Comfy Store website was done using React js, Auth0 and Stripe. The project was done following a course from Udemy. The reason I added the project to my portfolio is because I'm 100% sure I can replicate it without any issues.",
   },
   {
-    id: 8,
+    id: 7,
     img: "/assets/jobster.png",
     doneUsing: "React Js + Course Server + Course API + Redux",
     gitHub: "https://github.com/copreapt/my-jobster-app",
